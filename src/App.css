@@ -1,15 +1,7 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: aliceblue;
+  background-color: #A7ADBA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,6 +10,99 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.title {
+  text-shadow: 0.35vh 0.35vh #d4d6d8;
+}
+
+.bottom {
+  margin-top: 6vh;
+  font-size: 2vh;
+  margin-left: 70vh;
+}
+.wrapper {
+  /* border-style: solid; */
+  align-content: center;
+  background-color: #525450;
+  box-shadow: 1vh 1vh #525450;
+  border-radius: 2vh;
+    /* box-shadow : h-offset v-offset blur spread color */
+}
+
+.button {
+  width: 20vh;
+  height: 10vh;
+}
+
+.zero {
+  width: 60vh;
+  height: 10vh;
+  margin-left: 0;
+  
+}
+
+.button:hover {
+  border-radius: 2vh;
+}
+
+.operators:hover {
+  border-radius: 2vh;
+}
+
+.buttons {
+  margin-top: 2vh;
+  border-radius: 2vh;
+  background-color: #d4d6d8;
+  
+
+}
+
+.ceAndEqual{
+  background-color: #f98b11;
+  color: white;
+  width: 20vh;
+  height: 20vh;
+  float: right;
+
+}
+.operators{
+  background-color: #f98b11;
+  color: white;
+  width: 20vh;
+  height: 10vh;
+}
+
+.screen {
+  width: 95vh;
+  height: 15vh;
+  border-style: solid;
+  background-color: #202020;
+  color: black;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2vh;
+  color:white;
+  font-size: 9vh;
+  
+  box-shadow: 0.9vh 0.8vh #223456;
+
+  /* box-shadow : h-offset v-offset blur spread color */
+}
+
+.screen:hover {
+  border-radius: 2vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-logo-still {
+  height: 40vmin;
+}
+
+
 
 .App-link {
   color: #61dafb;
