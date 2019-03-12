@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import './Button.js';
-import logo from './Umbrella_Corporation_logo.svg';
 import { MyButton } from './Button.js';
 import { Screen } from './Screen';
 import { Buttons } from './Buttons';
@@ -71,10 +70,10 @@ class App extends Component {
     let s1 = "";
     let s2 = "";
     let operation = "";
-    let operationIndex = 0;
-    let num1 = 0;
-    let num2 = 0;
-    let result = 0;
+    let operationIndex;
+    let num1;
+    let num2;
+    let result;
 
     for (let i = 0; i < a.length; i++) {
       if (typeof (a[i]) != "number") {
@@ -113,6 +112,9 @@ class App extends Component {
         break;
       case '/':
         result = num1 / num2;
+        break;
+      default:
+        result=0;
         break;
 
     }
