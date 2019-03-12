@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: aliceblue;
   background-color: #A7ADBA;
   min-height: 100vh;
   display: flex;
@@ -31,16 +30,22 @@
 .button {
   width: 20vh;
   height: 10vh;
+  font-size: 3vw;
 }
 
 .zero {
   width: 60vh;
   height: 10vh;
   margin-left: 0;
+  font-size: 3vw;
   
 }
 
 .button:hover {
+   border-radius: 2vh;
+ }
+
+.zero:hover {
   border-radius: 2vh;
 }
 
@@ -52,7 +57,7 @@
   margin-top: 2vh;
   border-radius: 2vh;
   background-color: #d4d6d8;
-  
+    
 
 }
 
@@ -62,6 +67,7 @@
   width: 20vh;
   height: 20vh;
   float: right;
+  font-size: 3vw;
 
 }
 .operators{
@@ -69,6 +75,7 @@
   color: white;
   width: 20vh;
   height: 10vh;
+  font-size: 3vw;
 }
 
 .screen {
@@ -76,7 +83,6 @@
   height: 15vh;
   border-style: solid;
   background-color: #202020;
-  color: black;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2vh;
