@@ -51,6 +51,7 @@ class App extends Component {
            
            <br/>
             <MyButton className="zero" value={0} label="0" onClick={() => this.handleClick(0)} />
+            <MyButton className="dot" value="0" label="." onClick={() => this.handleClick(".")} />
 
  
             
@@ -76,7 +77,8 @@ class App extends Component {
     let result;
 
     for (let i = 0; i < a.length; i++) {
-      if (typeof (a[i]) != "number") {
+     // if (typeof (a[i]) != "number" && a[i]!=".") {
+       if (a[i]==="+" || a[i]==="-" || a[i]==="*" || a[i]==="/") {
         operationIndex = i;
         this.setState({ operI: operationIndex });
         operation = a[i];
@@ -86,18 +88,14 @@ class App extends Component {
 
     for (let i = 0; i < operationIndex; i++) {
       s1 += a[i];
-      num1 = parseInt(s1);
+      num1 = parseFloat(s1);
     }
     for (let i = operationIndex + 1; i < a.length; i++) {
       s2 += a[i];
-      num2 = parseInt(s2);
+      num2 = parseFloat(s2);
     }
 
-    num1 = parseInt(s1);
-    //testing
     this.setState({ num1: num1 });
-    num2 = parseInt(s2);
-    //testing
     this.setState({ num2: num2 });
 
     switch (operation) {
@@ -107,6 +105,7 @@ class App extends Component {
       case '-':
         result = num1 - num2;
         break;
+
       case '*':
         result = num1 * num2;
         break;

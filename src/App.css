@@ -34,11 +34,17 @@
 }
 
 .zero {
-  width: 60vh;
+  width: 40vh;
   height: 10vh;
   margin-left: 0;
   font-size: 3vw;
   
+}
+
+.dot {
+  width: 20vh;
+  height: 10vh;
+  font-size: 3vw;
 }
 
 .button:hover {
@@ -49,8 +55,12 @@
   border-radius: 2vh;
 }
 
+.dot:hover {
+  border-radius: 2vh;
+}
 .operators:hover {
   border-radius: 2vh;
+  background-color: #cc3300;
 }
 
 .buttons {
@@ -69,6 +79,11 @@
   float: right;
   font-size: 3vw;
 
+}
+
+.ceAndEqual:hover {
+  border-radius: 2vh;
+  background-color: #cc3300;
 }
 .operators{
   background-color: #f98b11;
