@@ -76,9 +76,13 @@ class App extends Component {
     let num2;
     let result;
 
+    //test
+    let ops=["+","-","*","/"];
+
     for (let i = 0; i < a.length; i++) {
-     // if (typeof (a[i]) != "number" && a[i]!=".") {
-       if (a[i]==="+" || a[i]==="-" || a[i]==="*" || a[i]==="/") {
+      
+        if (ops.includes(a[i]) ) {
+       // if (a[i]==="+" || a[i]==="-" || a[i]==="*" || a[i]==="/") {
         operationIndex = i;
         this.setState({ operI: operationIndex });
         operation = a[i];
@@ -117,6 +121,7 @@ class App extends Component {
         break;
 
     }
+  
     this.setState({ showing: result })
   }
 
