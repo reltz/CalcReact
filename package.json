@@ -1,7 +1,7 @@
 {
   "name": "mycalc",
   "version": "0.1.0",
-  "homepage":"https://reltz.github.io/CalcReact";
+  "homepage":"https://reltz.github.io/CalcReact",
   "private": true,
   "dependencies": {
     "react": "^16.8.3",
